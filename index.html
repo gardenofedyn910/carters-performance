@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Carter's Performance LLC</title>
+</head>
+<body>
+    <div class="head1">
+        <img src="img/mobilelogo.jpg" class="head2" alt="A logo on top of an engine.">
+
+        <div class="head3">
+            <p class="head4">We're here</p>
+        </div>
+        <div class="head5">
+            <p class="head6">for all your ATV performance needs</p>
+        </div>
+    </div>
+
+    
+
+    <div class="head7">
+        <img src="img/mobilelogo.jpg" class="head8" alt="A logo on top of an engine.">
+
+        <div class="head9">
+            <p class="head10">We're here</p>
+        </div>
+        <div class="head11">
+            <p class="head12">for all your ATV performance needs</p>
+        </div>
+    </div>
+
+
+    <nav class="navi1">
+        <ul class="navi2">
+            <li class="navi3"><a href="#" style="color: white; text-decoration: none;">HOME</a></li>
+            <li class="navi4"><a href="#" style="color: white; text-decoration: none;">ABOUT US</a></li>
+            <li class="navi5"><a href="#" style="color: white; text-decoration: none;">ATV/UTV</a></li>
+            <li class="navi6"><a href="#" style="color: white; text-decoration: none;">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="slideshowbackground">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/caro2.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/caro3.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/caro4.jpg" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/caro5.jpg" style="width: 100%;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+        <script>
+            
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+    
+
+    <div class="est1">
+        <p class="est2">Established 2014</p>
+    </div>
+    
+</body>
+</html>
