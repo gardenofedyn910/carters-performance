@@ -11,7 +11,7 @@
     height: 300px;
     width: 100%;
     position: absolute;
-    opacity: .75;
+    opacity: .85;
     border: outset 5px rgb(71, 107, 64, 0.779);
     border-radius: 5px;
 }
@@ -51,7 +51,7 @@
     height: 930px;
     width: 100%;
     position: absolute;
-    opacity: .75;
+    opacity: .85;
     border: outset 5px rgb(71, 107, 64, 0.779);
     border-radius: 5px;
 }
@@ -97,9 +97,9 @@
     align-items: center;
 }
 
-li:hover {
+.navi3:hover {
     background-color: gray;
-    width: 150px;
+    width: 100px;
     text-align: center;
 }
 
@@ -262,8 +262,8 @@ li:hover {
     display: flex;
     justify-content: space-evenly;
     height: 700px;
-    border-right: inset rgb(89, 137, 79) 5px;
-    border-top: inset rgb(89, 137, 79) 5px;
+    border-right: inset rgb(89, 137, 79) 8px;
+    border-top: inset rgb(89, 137, 79) 8px;
 }
 
 .about6 {
@@ -289,6 +289,12 @@ li:hover {
 
 }
 
+.logoatv2 {
+    height: 650px;
+    padding-top: 40px;
+}
+
+
 @media (min-width: 400px) {
     .about {
         display: none;
@@ -301,3 +307,87 @@ li:hover {
     }
 }
 
+footer {
+    background-image: radial-gradient(gray, rgba(71, 107, 64, 0.957));
+}
+
+.foot1 {
+    display: flex;
+    height: 150px;
+}
+
+.foot2 {
+    height: fit-content;
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: sans-serif ;
+    padding-left: 5px;
+}
+
+.foot3 {
+    text-decoration: underline;
+}
+
+.foot4, .foot5 {
+    color: rgb(215, 212, 212);
+}
+
+.foot6 {
+    margin-top: 99px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.foot7 {
+    padding-top: 35px;
+}
+
+.foot9 {
+    
+}
+
+.foot10 {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 100px
+}
+
+.foot11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    text-align: right;
+    margin-left: 55px;
+}
+
+.foot13 {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 100px
+}
+
+.foot14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    text-align: right;
+    margin-left: 1100px;
+}
+
+@media (min-width: 400px) {
+    .foot9 {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .foot12 {
+        display: none;
+    }
+}
