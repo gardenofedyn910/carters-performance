@@ -162,7 +162,6 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 100px);
     gap: 20px;
-    border: solid 1px red;
     padding-left: 100px;
 }
 
