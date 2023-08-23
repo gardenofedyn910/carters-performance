@@ -362,6 +362,7 @@ footer {
     font-family: sans-serif;
     text-align: right;
     margin-left: 55px;
+    padding-top: 15px;
 }
 
 .foot13 {
@@ -378,6 +379,7 @@ footer {
     font-family: sans-serif;
     text-align: right;
     margin-left: 1100px;
+    padding-top: 15px;
 }
 
 @media (min-width: 400px) {
